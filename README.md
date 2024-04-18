@@ -1,27 +1,38 @@
-# AcmeCrmProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
 
-## Development server
+# Acme CRM Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Create components
 
-## Code scaffolding
+1. Desde un terminal lanza el siguiente comando:
+```terminal
+ng new acme-crm --package-manager=pnpm --prefix=acme --style=scss
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2.  Open your angular.json and replace the builder in test, which should have the value ```@angular-devkit/build-angular:karma``` to ```@angular-devkit/build-angular:jest```.
 
-## Build
+3.  Install the necessary dependencies via ```pnpm add -D jest @types/jest jest-environment-jsdom```. Locate the tsconfig.spec.json and replace the value jasmine in the property types with jest.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Borra el contenido de los ficheros app.html y app.scss
+### Iteration 1: Header
+- Create a *header* component to include in any application view.
+- Use the component in the AppComponent template:
+- Add styles to the component:
+  - With SCSS
+  - With ng-bootstrap
+  - With Angular Material
 
-## Running unit tests
+### Iteration 2: Aside
+  - Add the aside menu.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Iteration 3: Dasboard Component
+- Add dashboard and position all the elements to get the following layout
 
-## Running end-to-end tests
+## Image preview 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+![Logo](./src/assets/create-project.png)
+
