@@ -1,9 +1,14 @@
-@import "../../styles.scss";
+@import "../../../styles.scss";
 
 :host{
   grid-row: span 2;
   background-color: orange;
   @include center;
+}
+
+.active {
+  background-color: red;
+
 }
 
 @media(max-width:368px){
