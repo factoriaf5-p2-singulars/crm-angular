@@ -1,1 +1,5 @@
-<p>customer-list works!</p>
+<ul>
+  @for (customer of customers; track trackCustomer) {
+    <li><a [routerLink]="['/customer',customer.id]">{{customer.name}} - {{customer.id}}</a></li>
+  }
+</ul>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-customer-detail',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './customer-detail.component.html',
   styleUrl: './customer-detail.component.scss'
 })
-export class CustomerDetailComponent {
-
+export class CustomerDetailComponent implements OnInit{
+  @Input() id!:string;
+  customer!: string;
+  
+  ngOnInit(): void {
+    this.customer = this.id
+  }
 }
