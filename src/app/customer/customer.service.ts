@@ -12,9 +12,10 @@ export class CustomerService {
   }
 
   getCustomerById(id:number):any{
-    return customers.find((customer:Customer)=>{
-      customer.id === id;
-    })
+    const result = customers.find((customer:Customer)=>
+      customer.id === id
+    )
+    if(result !== undefined) return result;
   }
 
 }
