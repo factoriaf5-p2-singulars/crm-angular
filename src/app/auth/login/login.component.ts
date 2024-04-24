@@ -5,8 +5,16 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.scss',
 })
 export class LoginComponent {
+  isLoggedIn = false;
 
+  login() {
+    this.isLoggedIn = true;
+  }
+
+  logOut() {
+    this.isLoggedIn = false;
+  }
 }

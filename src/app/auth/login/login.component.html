@@ -1,1 +1,2 @@
-<p>login works!</p>
+<button [disabled]="isLoggedIn" (click)="login()">Log in</button>
+<button  [disabled]="!isLoggedIn" (click)="logOut()">Log Out</button>

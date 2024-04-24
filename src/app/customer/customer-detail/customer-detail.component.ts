@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, } from '@angular/core';
 import { CustomerService } from '../customer.service';
 import { Customer } from '../../shared/interfaces/customer';
 
@@ -17,5 +17,10 @@ export class CustomerDetailComponent implements OnInit{
 
   ngOnInit(): void {
     this.customer = this.customerService.getCustomerById(+this.id);
+  }
+
+  saludar(event:MouseEvent){
+    console.log(event)
+    alert("ola k ase")
   }
 }
