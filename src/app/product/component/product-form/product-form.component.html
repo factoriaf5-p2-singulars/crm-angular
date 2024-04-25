@@ -1,1 +1,5 @@
-<p>product-form works!</p>
+<form #productForm="ngForm" (ngSubmit)="submit(productForm)">
+  <input type="text" placeholder="" name="productName" #productName="ngModel" ngModel>
+  <input type="text" placeholder="" name="productPrice" #productPrice="ngModel" ngModel>
+  <button type="submit">Submit</button>
+</form>
