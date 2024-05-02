@@ -1,5 +1,5 @@
 <form #productForm="ngForm" (ngSubmit)="submit(productForm)">
-  <input type="text" placeholder="" name="productName" #productName="ngModel" ngModel>
-  <input type="text" placeholder="" name="productPrice" #productPrice="ngModel" ngModel>
+  <input type="text" placeholder="Nombre" #productName="ngModel" name="productName" ngModel>
+  <input type="text" placeholder="Precio" #productPrice="ngModel" name="productPrice" ngModel>
   <button type="submit">Submit</button>
 </form>

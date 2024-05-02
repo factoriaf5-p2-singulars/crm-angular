@@ -9,7 +9,7 @@ export class ProductService {
   products!:Product[];
 
   constructor(){
-    this.products=products;
+    this.products = products;
   }
 
   getAllProduct(){

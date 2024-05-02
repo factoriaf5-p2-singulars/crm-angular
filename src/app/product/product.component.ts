@@ -24,4 +24,5 @@ export class ProductComponent implements OnInit{
  registerProduct(product:Product){
   this.productService.addProduct(product)
  }
+
 }

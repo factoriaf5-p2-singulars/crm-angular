@@ -13,12 +13,12 @@ export class ProductFormComponent {
   @Output() formSent=new EventEmitter();
 
   submit(productForm:NgForm){
-    const product: Product={
+    const product:Product={
       productId:999,
-      productName: productForm.controls['productName'].value,
+      productName:productForm.controls['productName'].value,
       productPrice:productForm.controls['productPrice'].value
     }
-
+  
     this.formSent.emit(product)
     productForm.resetForm()
   }
