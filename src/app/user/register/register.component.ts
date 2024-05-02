@@ -26,8 +26,10 @@ export class RegisterComponent {
 
   onSubmit(){
     if(this.registerForm.valid && !this.submited){
-      alert(JSON.stringify(this.registerFormControl.value))
+      alert('Formulario enviado')
       this.submited=true;
+    }else{
+      alert('Formulario no enviado')
     }
   }
 
