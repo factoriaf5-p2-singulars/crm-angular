@@ -8,6 +8,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { CustomerDetailComponent } from './customer/customer-detail/customer-detail.component';
 import { ProductComponent } from './product/product.component';
+import { RegisterComponent } from './user/register/register.component';
 
 export const routes: Routes = [
     {
@@ -44,6 +45,10 @@ export const routes: Routes = [
     {
         path:'login',
         component:LoginComponent
+    },
+    {
+      path:'register',
+      component:RegisterComponent
     },
     {
         path:'**',
