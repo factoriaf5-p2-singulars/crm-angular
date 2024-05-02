@@ -3,6 +3,7 @@ import { ProductListComponent } from "./component/product-list/product-list.comp
 import { Product } from '../shared/interfaces/product';
 import { ProductService } from './services/product.service';
 import { ProductFormComponent } from "./component/product-form/product-form.component";
+import { Observable } from "rxjs";
 
 @Component({
     selector: 'app-product',
@@ -12,7 +13,7 @@ import { ProductFormComponent } from "./component/product-form/product-form.comp
     imports: [ProductListComponent, ProductFormComponent]
 })
 export class ProductComponent implements OnInit{
-  products!:Product[];
+  products!:Observable<Product[]>;
 
 
  constructor(private productService:ProductService){}
