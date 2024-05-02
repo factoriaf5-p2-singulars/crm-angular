@@ -16,12 +16,15 @@ import { AsyncPipe } from '@angular/common';
 
 export class ProductComponent implements OnInit{
   products!:Observable<Product[]>;
+  // products!:Product[];
 
 
  constructor(private productService:ProductService){}
 
  ngOnInit(): void {
-   this.products = this.productService.getAllProduct();
+
+  // this.productService.getAllProduct().subscribe((products)=>this.products = products);
+  this.products =this.productService.getAllProduct();
  }
 
  registerProduct(product:Product){
